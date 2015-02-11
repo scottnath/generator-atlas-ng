@@ -1,0 +1,6 @@
+language: node_js
+node_js:
+  - '0.10'
+before_install:
+  - currentfolder=${PWD##*/}
+  - if [ "$currentfolder" != 'generator-atlas-ng' ]; then cd .. && eval "mv $currentfolder generator-atlas-ng" && cd generator-atlas-ng; fi
